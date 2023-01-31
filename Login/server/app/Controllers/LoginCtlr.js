@@ -5,8 +5,8 @@ const loginCtlr={}
 
 loginCtlr.list=(req,res)=>{
     Login.find()
-    .then((login)=>{
-        res.json(login)
+    .then((logins)=>{
+        res.json(logins)
 
     })
     .catch((err)=>{
@@ -29,4 +29,5 @@ loginCtlr.create=(req,res)=>{
     })
 
 }
-module.exports= Login
+
+module.exports= loginCtlr
